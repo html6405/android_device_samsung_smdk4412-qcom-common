@@ -43,3 +43,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=smdk4x12QComRIL
 
+PRODUCT_PACKAGES += \
+    libshim_ril

@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,19 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-COMMON_PATH := device/samsung/smdk4412-qcom-common
+LOCAL_PATH := $(call my-dir)
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/smdk4412-qcom-common/include
+include $(CLEAR_VARS)
 
-# GPS
-TARGET_NO_RPC := true
+LOCAL_SRC_FILES := \
+    samsung_ril.cpp
 
-# Radio
-BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
-BOARD_RIL_CLASS := ../../../device/samsung/smdk4412-qcom-common/ril
+LOCAL_SHARED_LIBRARIES := libbinder
 
-TARGET_LD_SHIM_LIBS += \
-    /system/lib/libsec-ril.so|libshim_ril.so
+LOCAL_MODULE := libshim_ril
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
+include $(BUILD_SHARED_LIBRARY)
