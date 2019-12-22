@@ -40,8 +40,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
 
 # RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=smdk4x12QComRIL
-
 PRODUCT_PACKAGES += \
-    libshim_ril
+    libshim_ril \
+    libsecril-shim
