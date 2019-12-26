@@ -43,3 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_ril \
     libsecril-shim
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril.config=fakeiccid
