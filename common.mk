@@ -44,5 +44,9 @@ PRODUCT_PACKAGES += \
     libshim_ril \
     libsecril-shim
 
+# SIM detection hack
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/20restartrild:system/etc/init.d/20restartrild
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.config=fakeiccid

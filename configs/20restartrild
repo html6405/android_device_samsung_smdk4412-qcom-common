@@ -1,0 +1,5 @@
+set -x
+
+sleep 40
+stop ril-daemon
+start ril-daemon
