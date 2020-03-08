@@ -109,7 +109,7 @@ void* MsgTask::loopMain(void* arg) {
     MsgTask* copy = (MsgTask*)arg;
 
     // make sure we do not run in background scheduling group
-    set_sched_policy(gettid(), SP_FOREGROUND);
+    //set_sched_policy(gettid(), SP_FOREGROUND);
 
     if (NULL != copy->mAssociator) {
         copy->mAssociator();
