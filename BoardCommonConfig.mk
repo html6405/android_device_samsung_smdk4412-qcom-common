@@ -24,6 +24,9 @@ TARGET_NO_RPC := true
 # Radio
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libsec-ril.so|libshim_ril.so
 
