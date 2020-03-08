@@ -30,3 +30,5 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libsec-ril.so|libshim_ril.so
 
+DEXPREOPT_GENERATE_APEX_IMAGE := false
+DEXPREOPT_USE_APEX_IMAGE := false
