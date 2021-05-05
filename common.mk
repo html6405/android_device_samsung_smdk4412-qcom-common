@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
     $(GPS_CONF):/system/etc/gps.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
 
+#Prepare script for qcks
+PRODUCT_COPY_FILES += \
+	$(COMMON_PATH)/qcks/qcks.sh:system/vendor/bin/qcks.sh
+
 # RIL
 PRODUCT_PACKAGES += \
     libshim_ril \
