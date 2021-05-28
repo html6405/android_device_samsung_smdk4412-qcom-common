@@ -312,6 +312,7 @@ enum loc_api_adapter_event_index {
     LOC_API_ADAPTER_BATCHED_POSITION_REPORT,           // Batching on fix
     LOC_API_ADAPTER_BATCHED_GENFENCE_BREACH_REPORT,    //
 
+    LOC_API_ADAPTER_REQUEST_TIMEZONE,                  // Timezone injection request
     LOC_API_ADAPTER_EVENT_MAX
 };
 
@@ -337,6 +338,7 @@ enum loc_api_adapter_event_index {
 #define LOC_API_ADAPTER_BIT_REQUEST_WIFI_AP_DATA             (1<<LOC_API_ADAPTER_REQUEST_WIFI_AP_DATA)
 #define LOC_API_ADAPTER_BIT_BATCH_FULL                       (1<<LOC_API_ADAPTER_BATCH_FULL)
 #define LOC_API_ADAPTER_BIT_BATCHED_POSITION_REPORT          (1<<LOC_API_ADAPTER_BATCHED_POSITION_REPORT)
+#define LOC_API_ADAPTER_BIT_REQUEST_TIMEZONE                 (1<<LOC_API_ADAPTER_REQUEST_TIMEZONE)
 
 typedef unsigned int LOC_API_ADAPTER_EVENT_MASK_T;
 
@@ -346,4 +348,3 @@ typedef unsigned int LOC_API_ADAPTER_EVENT_MASK_T;
 #endif /* __cplusplus */
 
 #endif /* GPS_EXTENDED_C_H */
-
