@@ -4,6 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := libloc_eng
 LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
 
 LOCAL_MODULE_TAGS := optional
 
@@ -57,6 +58,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := gps.default
 LOCAL_MODULE_OWNER := qcom
+LOCAL_PROPRIETARY_MODULE := true
 
 LOCAL_MODULE_TAGS := optional
 
@@ -88,6 +90,6 @@ LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_core
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_MODULE_RELATIVE_PATH := hw
 
 include $(BUILD_SHARED_LIBRARY)
