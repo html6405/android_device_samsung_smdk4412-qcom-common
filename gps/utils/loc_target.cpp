@@ -39,6 +39,7 @@
 #include "loc_target.h"
 #include "loc_log.h"
 #include "log_util.h"
+#include <unistd.h>
 
 #define APQ8064_ID_1 "109"
 #define APQ8064_ID_2 "153"

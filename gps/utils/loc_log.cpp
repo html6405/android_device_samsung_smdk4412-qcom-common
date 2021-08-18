@@ -39,6 +39,7 @@
 #endif /* USE_GLIB  */
 #include "log_util.h"
 #include "platform_lib_includes.h"
+#include <sys/poll.h>
 
 #define  BUFFER_SIZE  120
 

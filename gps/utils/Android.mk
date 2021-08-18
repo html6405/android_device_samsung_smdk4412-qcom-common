@@ -6,7 +6,8 @@ include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
-    liblog
+    liblog \
+    libhardware
 
 LOCAL_SRC_FILES += \
     sec_gps.c \
@@ -46,6 +47,7 @@ LOCAL_COPY_HEADERS:= \
 
 
 LOCAL_MODULE := libgps.utils
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_MODULE_TAGS := optional
 
