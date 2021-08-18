@@ -11,4 +11,4 @@ chmod 0775 /tombstones
 restorecon_recursive /tombstones
 restorecon /tombstones/qcks/temp.dump
 
-/system/vendor/bin/qcks s
+/vendor/bin/qcks s

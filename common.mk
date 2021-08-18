@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 
 #Prepare script for qcks
 PRODUCT_COPY_FILES += \
-	$(COMMON_PATH)/qcks/qcks.sh:system/vendor/bin/qcks.sh
+	$(COMMON_PATH)/qcks/qcks.sh:vendor/bin/qcks.sh
 
 # RIL
 PRODUCT_PACKAGES += \
