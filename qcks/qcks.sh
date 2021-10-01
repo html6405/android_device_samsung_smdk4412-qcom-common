@@ -8,7 +8,11 @@ chmod 0775 /data/cp_log
 chown system radio /data/cp_log
 chown system system /tombstones
 chmod 0775 /tombstones
-restorecon_recursive /tombstones
-restorecon /tombstones/qcks/temp.dump
+
+chmod 0775 /dev/block/modem/m9kefs1
+chown system radio /dev/block/modem/m9kefs2
+chmod 0775 /dev/block/modem/m9kefs2
+chown system radio /dev/block/modem/m9kefs3
+chmod 0775 /dev/block/modem/m9kefs3
 
 /vendor/bin/qcks s
