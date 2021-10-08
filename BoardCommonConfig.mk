@@ -24,6 +24,14 @@ TARGET_NO_RPC := true
 # Radio
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /vendor/bin/smdexe=19 \
+    /vendor/bin/qcks=19 \
+    /vendor/bin/ks=19 \
+    /vendor/bin/qmiproxy=19 \
+    /vendor/bin/qmuxd=19 \
+    /vendor/lib/libcsd-client.so=19
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
