@@ -14,5 +14,3 @@ chown system radio /dev/block/modem/m9kefs2
 chmod 0775 /dev/block/modem/m9kefs2
 chown system radio /dev/block/modem/m9kefs3
 chmod 0775 /dev/block/modem/m9kefs3
-
-/vendor/bin/qcks s

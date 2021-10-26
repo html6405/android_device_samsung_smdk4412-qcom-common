@@ -1,0 +1,3 @@
+service qcks_prepare /vendor/bin/qcks.sh
+    class main
+    oneshot
