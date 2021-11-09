@@ -55,7 +55,6 @@ LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
 ## Libs
-
 LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
@@ -75,10 +74,6 @@ LOCAL_CFLAGS += \
     -D_ANDROID_ \
     -Wno-error \
     -Wno-unused-parameter
-
-ifeq ($(TARGET_USES_QCOM_BSP), true)
-LOCAL_CFLAGS += -DTARGET_USES_QCOM_BSP
-endif
 
 LOCAL_HEADER_LIBRARIES := \
     libgps.utils_headers \
