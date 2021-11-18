@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/smdk4412-qcom-common
+LOCAL_PATH := device/samsung/smdk4412-qcom-common
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -30,9 +30,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.gps.qc_nlp_in_use=0
 
 ifeq ($(TARGET_VOICE_TECH), cdma)
-    GPS_CONF := $(COMMON_PATH)/gps/etc/gps-cdma.conf
+    GPS_CONF := $(LOCAL_PATH)/gps/etc/gps-cdma.conf
 else
-    GPS_CONF := $(COMMON_PATH)/gps/etc/gps.conf
+    GPS_CONF := $(LOCAL_PATH)/gps/etc/gps.conf
 endif
 
 PRODUCT_COPY_FILES += \
@@ -41,8 +41,8 @@ PRODUCT_COPY_FILES += \
 
 #Prepare script for qcks
 PRODUCT_COPY_FILES += \
-	$(COMMON_PATH)/qcks/qcks.sh:vendor/bin/qcks.sh \
-	$(COMMON_PATH)/qcks/qcks.rc:vendor/etc/init/qcks.rc
+	$(LOCAL_PATH)/qcks/qcks.sh:vendor/bin/qcks.sh \
+	$(LOCAL_PATH)/qcks/qcks.rc:vendor/etc/init/qcks.rc
 
 # RIL
 PRODUCT_PACKAGES += \

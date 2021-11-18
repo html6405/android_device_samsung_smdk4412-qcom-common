@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/smdk4412-qcom-common
+LOCAL_PATH := device/samsung/smdk4412-qcom-common
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/smdk4412-qcom-common/include
 
@@ -33,7 +33,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /vendor/lib/libcsd-client.so=19
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)/releasetools
 
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libsec-ril.so|libshim_ril.so
