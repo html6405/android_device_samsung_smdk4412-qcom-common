@@ -57,8 +57,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=1 \
     dalvik.vm.image-dex2oat-threads=1
 
-# Android GO stuff
-# $(call inherit-product, $(LOCAL_PATH)/go_smdk4412-qcom.mk)
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
