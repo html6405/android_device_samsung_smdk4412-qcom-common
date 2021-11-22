@@ -58,7 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ=1
 
 # Low memory device
-PRODUCT_PROPERTY_OVERRIDES += \
+# PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.low_ram=true
 
 # Force high-end graphics in low ram mode
