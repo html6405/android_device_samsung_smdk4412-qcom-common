@@ -80,3 +80,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 # PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.supplicant_scan_interval=240
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.ril.telephony.qan_resp_strings=6
