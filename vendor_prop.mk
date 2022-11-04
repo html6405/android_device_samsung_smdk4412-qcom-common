@@ -35,7 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sys.fw.empty_app_percent=25 \
 	ro.sys.fw.trim_empty_percent=50 \
 	ro.sys.fw.trim_cache_percent=50 \
-	ro.sys.fw.bg_apps_limit=32 \
 	ro.sys.fw.bservice_limit=7 \
 	ro.sys.fw.bservice_age=6000 \
 	ro.sys.fw.bservice_enable=true
@@ -57,29 +56,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ=1
 
-# Low memory device
-# PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.low_ram=true
-
 # Force high-end graphics in low ram mode
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.force_highendgfx=true
 
-# Reduce background apps limit to 16 on low-tier devices
-# PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.fw.bg_apps_limit=16
-
-# Set max background services
-# PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.max_starting_bg=4
-
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.def.agps.mode=1
-
-# Wifi
-# PRODUCT_PROPERTY_OVERRIDES += \
-	wifi.supplicant_scan_interval=240
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.telephony.qan_resp_strings=6
